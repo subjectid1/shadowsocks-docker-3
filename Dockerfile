@@ -4,3 +4,4 @@
 
 FROM shadowsocks/shadowsocks-libev:latest
 LABEL maintainer="hopher <565983236@qq.com>"
+EXPOSE 8388

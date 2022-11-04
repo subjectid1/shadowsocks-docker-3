@@ -11,7 +11,7 @@ build:
   #  - OKTETO_BUILD_SHADOWSOCKS_TAG: image tag
   shadowsocks:
     context: .
- 
+    image: hopher/shadowsocks-libev:latest
     dockerfile: Dockerfile
    
 

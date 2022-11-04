@@ -2,6 +2,8 @@ version: '3'
 services:
   shadowsocks:
     image: hopher/shadowsocks-libev:latest
+     ports:
+       - 8388
     container_name: my_shadowsocks
  
     build:

@@ -9,7 +9,7 @@ services:
       context: .
       dockerfile: Dockerfile
  
-      ports:
+    ports:
         - 8388
       
     environment:

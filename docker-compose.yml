@@ -2,8 +2,7 @@ version: '3'
 services:
   shadowsocks:
     image: hopher/shadowsocks-libev:latest
-    ports:
-           - "8388:8388/tcp"
+    
     container_name: my_shadowsocks
  
     build:
@@ -11,4 +10,9 @@ services:
     environment:
       - METHOD=aes-256-gcm  # 加密方法
       - PASSWORD=9MLSpPmNt  # 密码
+      dockerfile: Dockerfile
+ 
+      ports:
+      - 8388
+      
     restart: always

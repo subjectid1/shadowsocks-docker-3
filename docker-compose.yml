@@ -2,9 +2,8 @@ version: '3'
 services:
   shadowsocks:
     image: hopher/shadowsocks-libev:latest
-    expose:
-      - 8388/tcp
-      - 8388/udp
+    ports:
+      - 8080:8080
     container_name: my_shadowsocks
  
     build:
